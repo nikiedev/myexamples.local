@@ -1,0 +1,186 @@
+body {
+    background-color: #78cc78;
+}
+
+#main {
+    margin: auto;
+    display: block;
+    width: 584px;
+    height: 300px;
+}
+
+#progressLt, #progressRt {
+    position: relative;
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    float: left;
+    margin: 17% 20px 0 20px;
+    max-height: 100px;
+    height: 100%;
+}
+
+#progressLt {
+    background-color: #00ff00;
+}
+
+#progressRt {
+    background-color: #ff0000;
+}
+
+#drawLt, #drawRt {
+    display: none;
+    border-radius: 50%;
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+    background-color: #ffff00;
+    box-shadow: 1px 1px 1px 1px #4c4c4c, -1px -1px 1px 1px #4c4c4c;
+}
+
+.btn {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    font-size: 150%;
+    font-family: 'Georgia', 'Arial', sans-serif;
+    background-color: #00ff00;
+    border: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.leftBar, .rightBar {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+.rightBar {
+    background-color: #ff0000;
+}
+
+.loaded {
+    position: absolute;
+    padding-top: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes smallerH {
+    from {
+        max-height: 100px;
+        margin-top: 17%;
+    } to {
+        max-height: 35px;
+        margin-top: 23%;
+    }
+}
+
+@keyframes smallerH {
+    from {
+        max-height: 100px;
+        margin-top: 17%;
+    } to {
+        max-height: 35px;
+        margin-top: 23%;
+    }
+}
+
+@-webkit-keyframes biggerH {
+    from {
+        max-height: 35px;
+        margin-top: 23%;
+    } to {
+        max-height: 100px;
+        margin-top: 17%;
+    }
+}
+
+@keyframes biggerH {
+    from {
+        max-height: 35px;
+        margin-top: 23%;
+    } to {
+        max-height: 100px;
+        margin-top: 17%;
+    }
+}
+
+@-webkit-keyframes biggerW {
+    from {
+        max-width: 35px;
+        margin-left: 20%;
+    } to {
+        max-width: 250px;
+        margin-left: 3.5%;
+    }
+}
+
+@keyframes biggerW {
+    from {
+        max-width: 35px;
+        margin-left: 20%;
+    } to {
+        max-width: 250px;
+        margin-left: 3.5%;
+    }
+}
+
+@-webkit-keyframes smallerW {
+    from {
+        max-width: 250px;
+        margin-left: 3.5%;
+    } to {
+        max-width: 35px;
+        margin-left: 20%;
+    }
+}
+
+@keyframes smallerW {
+    from {
+        max-width: 250px;
+        margin-left: 3.5%;
+    } to {
+        max-width: 35px;
+        margin-left: 20%;
+    }
+}

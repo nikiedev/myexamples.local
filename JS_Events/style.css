@@ -1,0 +1,30 @@
+.image, .image-task2,
+.img1, img2, img3, img4, img5 {
+    display: block;
+}
+
+h2 {
+    background-color: #00ffff;
+    text-shadow: 1px 1px 0 #000000;
+    text-align: center;
+}
+
+.image {
+    width: 200px;
+    height: 150px;
+    background-image: url(images/Tree_1366x768.jpg);
+    background-size: cover;
+}
+
+.image-task2 {
+    width: 400px;
+    height: 250px;
+    background-image: url(images/Serenity_1600x1000.jpg);
+    background-size: cover;
+}
+
+.imgactive {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
