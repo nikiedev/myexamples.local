@@ -10,8 +10,9 @@ function __autoload($class_name)
 }
 
 /**
- --- 2 вариант ---
-
-spl_autoload_extensions('.class.php');
-spl_autoload_register();
-*/
+ *  --- 2 вариант ---
+ * 
+ * spl_autoload_extensions('.class.php');
+ * spl_autoload_register();
+ * 
+ */
