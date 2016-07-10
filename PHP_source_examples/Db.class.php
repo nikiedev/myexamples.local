@@ -41,7 +41,6 @@ class Db
      * @param string $sql
      * @param array $params
      * @return array
-     * @throws \Exception
      */
     public function query(string $sql, array $params = []): array
     {
