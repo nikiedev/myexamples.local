@@ -1,4 +1,7 @@
 <?php
+
+//use app\lib\Db;
+
 echo '<h1 style="text-align: center;">Статьи</h1>';
 
 //require_once __DIR__ . '/autoload.php';
@@ -22,7 +25,26 @@ $mArr->add($news);
 
 $mArr->view();
 
-?>
+/**
+ * Пример работы с базой данных
+ * spl_autoload_extensions('.class.php');
+ * spl_autoload_register();
+ * 
+ * $db = new Db(); // создали экземпляр класса
+ * 
+ * $sql = 'SELECT money_b, money_p FROM db_users_b WHERE id LIKE :id'; // строка выборки данных
+ * 
+ * $res = $db->query($sql, [':id' => 1]); // выполняем запрос к базе с параметрами
+ * 
+ * // выводим содержимое на экран чеерез цикл
+ * foreach ($res as $i => $j) {
+ *  echo '<hr>';
+ *  foreach ($j as $k => $v) {
+ *      echo $k . ' ---> ' . $v . '<br>';
+ *  }
+ * }
+ * ?>
+*/
 
 <!doctype html>
 <html lang="en">
